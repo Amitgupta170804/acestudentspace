@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+    <header>
+        <h1>Feedback Form</h1>
+    </header>
+    <main>
+        <div id="feedback-container">
+            <form id="feedback-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Feedback:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+            <div id="thank-you-message" style="display: none;">
+                <p>Thank you for your feedback! We appreciate your input.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2023 ACE Student Space
+    </footer>
+
+    <script>
+        const feedbackForm = document.getElementById("feedback-form");
+        const thankYouMessage = document.getElementById("thank-you-message");
+
+        feedbackForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            
+            // Handle the form submission (e.g., send data to the server)
+            
+            // After handling the submission, show the "Thank you" message and hide the form
+            feedbackForm.style.display = "none";
+            thankYouMessage.style.display = "block";
+        });
+    </script>
+</body>
+</html>

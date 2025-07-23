@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>Our Team Member</h1>
+    </header>
+    <main>
+        <div id="alumni-container">
+            <!-- Alumni profiles will be dynamically added here -->
+        </div>
+    </main>
+    <footer>
+        &copy; 2023 ACE Student Space
+    </footer>
+
+    <script>
+        // Sample alumni data (you can load this data from a database or an API)
+        const alumniData = [
+            {
+                name: "Sahil Kavatkar",
+                contact: 9987472562,
+                currentPosition: "Website Devloper",
+                image: "sahil1.png"
+            },
+            {
+                name: "Amit Gupta",
+                contact: 7304091729,
+                currentPosition: "Website Devloper",
+                image: "amit.png"
+            },
+            {
+                name: "Suraj Mandigam",
+                contact: 7385908256,
+                currentPosition: "Editor",
+                image: "suraj.png"
+            },
+            {
+                name: "Sagar Mandigam",
+                contact: 9922089998,
+                currentPosition: "Content Writer",
+                image: "sagar.png"
+            },
+        ];
+
+        const alumniContainer = document.getElementById("alumni-container");
+
+        // Loop through alumniData and create HTML for each alumni profile
+        alumniData.forEach(alumni => {
+            const profileDiv = document.createElement("div");
+            profileDiv.className = "profile";
+
+            profileDiv.innerHTML = `
+                <img src="${alumni.image}" alt="${alumni.name}'s Photo">
+                <h2>${alumni.name}</h2>
+                <p>Contact: ${alumni.contact}</p>
+                <p>Team Position: ${alumni.currentPosition}</p>
+            `;
+
+            alumniContainer.appendChild(profileDiv);
+        });
+    </script>
+</body>
+</html>

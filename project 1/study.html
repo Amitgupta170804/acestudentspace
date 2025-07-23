@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>PDF Embed Example</title>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        .dlca-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dlca-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <h1>CMPN DEPARTMENT</h1>
+        <div class="section">
+            <marquee behavior="scroll" direction="left"><font color="red">!Latest notes will be updated here!</font></marquee>
+        </div>
+        <h2>SUBJECT</h2>
+        <hr/>
+        <div class="section">
+            <h3>Engg. Mathematics 3</h3>
+            <!-- Using an iframe to embed the PDF -->
+            <img src="/image/math3.jpg" alt="Math3 Textbook" width="10%" height="150px"/>
+            <br>
+            <a href="https://drive.google.com/file/d/1PAHpUkbXopidYwbgbrRO2ijNlF-OrGOD/view?usp=drive_link">
+                <button class="styled" type="button">Download</button>
+            </a>
+        </div>
+        <hr/>
+        <div class="section">
+            <h3>Data Structure</h3>
+            <img src="/images/ds.jpg" alt="Data Structure Textbook" width="10%" height="150px"/>
+            <br>
+            <a href="https://drive.google.com/file/d/115RPr8Vz0KVQe4aeeVCkhMNgPQ-s0q-b/view?usp=drive_link">
+                <button class="styled" type="button">Download</button>
+            </a>
+        </div>
+        <hr/>
+        <div class="section">
+            <h3>Digital Logic and Computer Organization and Architecture</h3>
+            <!-- Using an iframe to embed the PDF -->
+            <div class="dlca-container">
+                <div class="dlca-item">
+                    <img src="dlca.jpg" alt="DLCA Textbook" width="100%" height="150px"/>
+                    <br>
+                    <a href="https://drive.google.com/file/d/119HX7rOYlBYRBXeZG0PIGqcceZamJzwJ/view?usp=drive_link">
+                        <button class="styled" type="button">Download</button>
+                    </a>
+                </div>
+                <div class="dlca-item">
+                    <img src="dlca1.jpg" alt="DLCA Textbook" width="100%" height="150px"/>
+                    <br>
+                    <a href="https://drive.google.com/file/d/187odhrK4x-luCCZADHjSRQSIoW9gWCI8/view?usp=drive_link">
+                        <button class="styled" type="button">Download</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        &copy; 2023 ACE Student Space
+    </footer>
+</body>
+</html>

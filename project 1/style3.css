@@ -1,0 +1,101 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, rgba(2, 80, 182, 0.805), #abeaf9, rgba(2, 80, 182, 0.805));
+    text-align: center;
+}
+
+.main-content {
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the content horizontally */
+    background: linear-gradient(to right, #e9f9fd, #a4d0fc); /* Add a gradient background */
+    border-radius: 15px; /* Add rounded corners */
+    padding: 40px; /* Add some spacing around the main content */
+    border: 1px solid #ccc; /* Add a border to the main content */
+    
+}
+h1 {
+    font-size: 36px;
+    margin: 20px 0;
+    color: #fffefe;
+    background-color: #102bb3; /* Replace #f2f2f2 with the color you desire */
+    border-radius: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #444;
+}
+
+h3 {
+    font-size: 24px;
+    color: #555;
+    margin: 15px 0;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #333;
+    margin: 20px auto;
+    width: 100%;
+}
+
+img {
+    border: 2px solid #333;
+    border-radius: 5px;
+    max-width: 100%;
+    transition: transform 0.2s;
+}
+
+img:hover {
+    transform: scale(1.05); /* Add a slight zoom effect on hover */
+}
+
+a {
+    text-decoration: none;
+}
+
+button.styled {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+button.styled:hover {
+    background-color: #053c77;
+}
+
+button.styled:active {
+    background-color: #003d80;
+}
+
+.dlca-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dlca-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+footer {
+    background-color: #102bb3;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

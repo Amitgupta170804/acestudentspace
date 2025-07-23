@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alumni Network</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+    <header>
+        <h1>ALUMNI PROFILES</h1>
+    </header>
+    <main>
+        <div id="alumni-container">
+            <!-- Alumni profiles will be dynamically added here -->
+        </div>
+    </main>
+    <footer>
+        &copy; 2023 ACE Student Space
+    </footer>
+
+    <script>
+        // Sample alumni data (you can load this data from a database or an API)
+        const alumniData = [
+            {
+                name: "Dhwani Vora",
+                graduationYear: 2018,
+                major: "Information Technology",
+                currentPosition: "Software Engineer",
+                image: "alumini1.png"
+            },
+            {
+                name: "Siddharth Shetty",
+                graduationYear: 2006,
+                major: "Electronics and Telecommunication Engineering",
+                currentPosition: "Business Analytics ",
+                image: "alumini2.png"
+            },
+            {
+                name: "Satyendra S Maurya",
+                graduationYear: 2019,
+                major: "Electronics Engineering",
+                currentPosition: "Associate Engineer ",
+                image: "alumini3.png"
+            },
+            
+            {
+                name: "Shubham Waje",
+                graduationYear: 2021,
+                major: "Computer Engineering",
+                currentPosition: "Embedded Devloper",
+                image: "alumini4.png"
+            },
+            {
+                name: "Minesh Chaudhary",
+                graduationYear: 2022,
+                major: "Computer Engineering",
+                currentPosition: " Software Engineer",
+                image: "alumini5.jpg"
+            },
+            {
+                name: "Tanmay Gigie",
+                graduationYear: 2018,
+                major: "Computer Engineering",
+                currentPosition: "System Engineer",
+                image: "alumini6.jpg"
+            },
+            {
+                name: "Shrusti Shah",
+                graduationYear: 2017,
+                major: "Information Technology",
+                currentPosition: "Web Developer",
+                image: "alumini7.jpg"
+            },
+            {
+                name: "Shodhan Save",
+                graduationYear: 2012,
+                major: "Eletrical Engineering",
+                currentPosition: "Senior Engineer",
+                image: "alumini8.jpg"
+            },
+            // Add more alumni profiles here
+        ];
+
+        const alumniContainer = document.getElementById("alumni-container");
+
+        // Loop through alumniData and create HTML for each alumni profile
+        alumniData.forEach(alumni => {
+            const profileDiv = document.createElement("div");
+            profileDiv.className = "profile";
+
+            profileDiv.innerHTML = `
+                <img src="${alumni.image}" alt="${alumni.name}'s Photo">
+                <h2>${alumni.name}</h2>
+                <p>Graduation Year: ${alumni.graduationYear}</p>
+                <p>Major: ${alumni.major}</p>
+                <p>Current Position: ${alumni.currentPosition}</p>
+            `;
+
+            alumniContainer.appendChild(profileDiv);
+        });
+    </script>
+</body>
+</html>
